@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from 'react';
 import { Manrope, Vollkorn } from 'next/font/google';
+import Hamburger from 'hamburger-react'
 
-import MenuIcon from '/public/menu-icon.svg'
 
 const manrope = Manrope({
   weight: ['200', '300', '400', '600', '700'],
@@ -15,6 +16,7 @@ const vollkorn = Vollkorn({
 
 
 export default function Home() {
+  const [ isOpen, setOpen ] = useState(false)
   return (
     <div
       className={`${manrope.className} grid grid-cols-6 justify-between`}
@@ -24,10 +26,11 @@ export default function Home() {
         <div className="flex  gap-3 m-4 justify-between content-center items-center">
           <Link href='#' className="text-xs font-semibold">Download CV</Link>
           <Link href='#' className="hidden md:block">GitHub</Link>
-          <div className="flex justify-center">
+          <div className="flex justify-center content-center items-center">
             <Link href='#'>Menu</Link>
-            <Image width={20} height={20} src={MenuIcon} alt='Menu Icon' />
+            <Hamburger toggled={isOpen} toggle={() => setOpen(!isOpen)} size={22} />
           </div>
+          <div className={`${!isOpen && 'hidden' } col-span-full bg-slate-600`}>menu</div>
 
         </div>
       <span className="absolute w-48 h-56 -z-50 rounded-full bg-violet-700 blur-3xl right-4 top-2 opacity-35">hola</span>
