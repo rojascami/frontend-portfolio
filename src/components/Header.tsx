@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ vollkorn }) => {
     return (
         <>
 
-            <motion.div className={`${!isOpen && 'opacity-0'} absolute w-full h-full col-span-full bg-black text-white transition ease-in-out delay-50 flex items-center pl-7`}>
+            <motion.div className={`${!isOpen && 'opacity-0 pointer-events-none'} absolute w-full h-full col-span-full bg-black text-white transition ease-in-out delay-50 flex items-center pl-7`}>
                 <div className="flex flex-col justify-center text-4xl gap-8">
                     {data.map((section, index) => (
                         <Link key={index} href={section.url}>{section.section}</Link>
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ vollkorn }) => {
                     <Link href='#' className="text-xs font-semibold">Download CV</Link>
                     <Link href='#' className="hidden md:block">GitHub</Link>
                     <div className="flex justify-center content-center items-center">
-                        <Link href='#'>Menu</Link>
+                        <button onClick={()=>setOpen(!isOpen)}>Menu</button>
                         <div className={`${!isOpen ? 'text-black' : 'text-white hover:animate-bounce'}`}><Hamburger toggled={isOpen} toggle={() => setOpen(!isOpen)} size={16} />{isOpen && 'close'}</div>
                     </div>
                 </div>
