@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ vollkorn }) => {
 
                 </div>
             </motion.div>
-            <header className="col-span-full  border-b border-black flex justify-between items-center content-center ">
+            <header className="col-span-full  border-b border-black flex justify-between items-center content-center bg-white/35">
 
                 <Link href='#' className={`${vollkorn.className} font-semibold m-4 text-2xl`}>C.</Link>
                 <div className="flex  gap-3 m-4 justify-between content-center items-center">

@@ -5,6 +5,7 @@
 import { Manrope, Vollkorn } from 'next/font/google';
 
 import Header from '@/components/Header';
+import Hero from '@/components/Hero';
 import About from '@/pages/about'
 import Projects from './projects';
 
@@ -26,8 +27,7 @@ export default function Home() {
       <Header vollkorn={vollkorn}/>
       
       <div className="col-start-2 col-end-6">
-    <About />
-    <Projects></Projects>
+        <Hero></Hero>
   </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
 

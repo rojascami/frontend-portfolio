@@ -1,13 +1,30 @@
+import { TbBrandGithub } from "react-icons/tb";
+import Image from 'next/image'
+import Link from "next/link";
+
 const Projects = () => {
 
     return (
         <div className="bg-white flex flex-col">
-        <div className="block">Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
-        <div>Project 4</div>
-        <div>Project 5</div>
-        
+            <div>
+                <Image src="/photovideo.png" width={500}
+                    height={500}
+                    alt="Picture of the author"></Image><Link href="https://github.com/rojascami/photography-portfolio"><TbBrandGithub />
+                </Link>
+            </div>
+            <div>
+                <Image src="/lumina-workouts-desktop.jpg" width={500}
+                    height={500}
+                    alt="Picture of the author"></Image><Link href="https://github.com/rojascami/photography-portfolio"><TbBrandGithub />
+                </Link>
+            </div>
+            <div>
+                <Image src="/dessert-market-desktop.jpg" width={500}
+                    height={500}
+                    alt="Picture of the author"></Image><Link href="https://github.com/rojascami/photography-portfolio"><TbBrandGithub />
+                </Link>
+            </div>
+
         </div>
     )
 }
