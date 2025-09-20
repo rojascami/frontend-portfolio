@@ -24,6 +24,12 @@ const Projects = () => {
                     alt="Picture of the author"></Image><Link href="https://github.com/rojascami/photography-portfolio"><TbBrandGithub />
                 </Link>
             </div>
+            <div>
+                <Image src="/natours-desktop.jpg" width={500}
+                    height={500}
+                    alt="Picture of the author"></Image><Link href="https://github.com/rojascami/photography-portfolio"><TbBrandGithub />
+                </Link>
+            </div>
 
         </div>
     )

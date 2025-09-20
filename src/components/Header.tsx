@@ -24,14 +24,14 @@ const Header: React.FC<HeaderProps> = ({ vollkorn }) => {
 
                 </div>
             </motion.div>
-            <header className="col-span-full  border-b border-black flex justify-between items-center content-center bg-white/35">
+            <header className="col-span-full  border-b border-black flex justify-between items-center content-center">
 
                 <Link href='#' className={`${vollkorn.className} font-semibold m-4 text-2xl`}>C.</Link>
                 <div className="flex  gap-3 m-4 justify-between content-center items-center">
                     <Link href='#' className="text-xs font-semibold">Download CV</Link>
-                    <Link href='#' className="hidden md:block">GitHub</Link>
+                    <Link href='https://github.com/rojascami'>GitHub</Link>
                     <div className="flex justify-center content-center items-center">
-                        <button onClick={()=>setOpen(!isOpen)}>Menu</button>
+                        <button className="hidden md:block" onClick={()=>setOpen(!isOpen)}>Menu</button>
                         <div className={`${!isOpen ? 'text-black' : 'text-white hover:animate-bounce'}`}><Hamburger toggled={isOpen} toggle={() => setOpen(!isOpen)} size={16} />{isOpen && 'close'}</div>
                     </div>
                 </div>
