@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="relative w-44 flex content-end justify-evenly items-center self-center mt-10">
 
                 
-                <Link className="p-2  self-center text-xs " href="/projects"><div className="bg-transparent w-40 h-20 -z-0 rounded-full hover:bg-violet-700 blur-xl  opacity-35 absolute top-0" />Check my projects </Link>
+                <Link className="p-2  self-center text-xs " href="/projects"><div className="bg-transparent w-40 h-20 -z-0 rounded-full hover:bg-violet-700 blur-xl  opacity-35 absolute left-0 top-0" />Check my projects </Link>
 
 
             </div>
