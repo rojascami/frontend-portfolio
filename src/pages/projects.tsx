@@ -17,8 +17,8 @@ const Projects = () => {
                         <h3 className="text-md text-bold">{item.title}</h3>
                         <div className="flex gap-2 text-sm  ">
                         {/* <Link href={item.url}><TbBrandGithub className="hover:scale-110 hover:text-violet-700"/></Link> */}
-                        <Link href={item.url} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1">GitHub </Link>
-                        <Link href={item.live} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1">Live Site</Link>
+                        <Link href={item.url} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1 flex gap-1 items-center">Repository</Link>
+                        <Link href={item.live} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1 flex gap-1 items-center">Live Site <TbWorldShare /></Link>
                         </div>
                     </div>
                 </div>
