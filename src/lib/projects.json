@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Photography portfolio",
+        "src": "/photovideo.png",
+        "url": "https://github.com/rojascami/photography-portfolio",
+        "live": "https://"
+    },
+    {
+        "title": "Lumina Workouts",
+        "src": "/lumina-workouts-desktop.jpg",
+        "url": "https://github.com/rojascami/photography-portfolio",
+        "live": "https://"
+    },
+    {
+        "title": "Natours",
+        "src": "/natours-desktop.jpg",
+        "url": "https://github.com/rojascami/photography-portfolio",
+        "live": "https://"
+    }
+
+]

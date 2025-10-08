@@ -26,8 +26,12 @@ export default function Home() {
 
       <Header vollkorn={vollkorn}/>
       
-      <div className="col-start-2 col-end-12">
+      <div className="col-start-2 col-end-12 gap-20">
         <Hero></Hero>
+        <About></About>
+        
+          <Projects></Projects>
+    
   </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
 
