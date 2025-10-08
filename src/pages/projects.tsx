@@ -12,7 +12,7 @@ const Projects = () => {
                     <Image src={item.src} width={500}
                         height={500}
                         alt={item.title}
-                        className="rounded-lg hover:scale-110 duration-300 border border-black rounded-md text-xl " />
+                        className="rounded-lg hover:scale-110 duration-300 border border-black rounded-md" />
                     <div className="flex m-2 justify-evenly ">
                         <h3>{item.title}</h3>
                         <div className="flex gap-2 border border-black rounded-md text-xl pr-4 pl-4 pt-1 pb-1 ">
