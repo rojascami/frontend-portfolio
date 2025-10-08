@@ -13,11 +13,12 @@ const Projects = () => {
                         height={500}
                         alt={item.title}
                         className="rounded-lg hover:scale-110 duration-300 border border-black rounded-md" />
-                    <div className="flex m-2 justify-evenly ">
-                        <h3>{item.title}</h3>
-                        <div className="flex gap-2 border border-black rounded-md text-xl pr-4 pl-4 pt-1 pb-1 ">
-                        <Link href={item.url}><TbBrandGithub className="hover:scale-110 hover:text-violet-700"/></Link>
-                        <Link href={item.live}><TbWorldShare className="hover:scale-110 hover:text-violet-700" /></Link>
+                    <div className="flex m-2 justify-between ">
+                        <h3 className="text-md text-bold">{item.title}</h3>
+                        <div className="flex gap-2 text-sm  ">
+                        {/* <Link href={item.url}><TbBrandGithub className="hover:scale-110 hover:text-violet-700"/></Link> */}
+                        <Link href={item.url} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1">GitHub </Link>
+                        <Link href={item.live} className="hover:scale-110 hover:text-violet-700 border border-black hover:border-violet-500 rounded pr-5 pl-5 pt-1 pb-1">Live Site</Link>
                         </div>
                     </div>
                 </div>
